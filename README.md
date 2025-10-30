@@ -1,8 +1,4 @@
-Here is the **README.md for the Android app only**, excluding all web/backend info:
-
----
-
-## Smart Building Solutions – Android App
+# Smart Building Solutions – Android App
 
 The **Smart Building Solutions Mobile App** enables construction site workers and on-site personnel to track and update project progress in real time. It allows users to view project and contract data, update performance item statuses, and upload photo documentation directly from the construction site — even when offline.
 
