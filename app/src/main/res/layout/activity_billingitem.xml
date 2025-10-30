@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/standard_layout"
+        layout="@layout/standard_layout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/standard_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leistungsposition"
+            android:textStyle="bold"
+            android:textSize="29dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/construction_progress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/construction_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:drawableRight="@drawable/photo"
+            android:onClick="onConstructionProgress"
+            android:padding="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Bilder"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.2"
+            android:text="ID:"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/beschreibung"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Beschreibung:"
+            android:textSize="24dp" />
+
+
+        <TextView
+            android:id="@+id/stückzahl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Stückzahl:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/stückpreis"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="Stückpreis:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/gesamtkosten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="Gesamtkosten:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Status:"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/enthaltenIn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:text="Enthalten in:"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+        <TextView
+            android:id="@+id/showId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.5"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/showBeschreibung"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/showStückzahl"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showStückpreis"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showGesamtkosten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/showStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="4dp"
+                android:maxEms="6"
+                android:text="NO_STATUS"
+                android:textSize="24dp"
+                android:visibility="invisible"/>
+
+            <ImageButton
+                android:id="@+id/editStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/ic_edit"
+                android:visibility="invisible">
+
+            </ImageButton>
+
+            <Spinner
+                android:id="@+id/statusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/showEnthaltenIn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.5"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

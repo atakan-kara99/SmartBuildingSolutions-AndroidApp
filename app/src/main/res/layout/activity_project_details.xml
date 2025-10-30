@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/standard_layout"
+        layout="@layout/standard_layout">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/standard_layout">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.2"
+            android:text="ID:"
+            android:textStyle="bold"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Name:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/beschreibung"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Beschreibung:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/erstellungdatum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="Erstellung:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/fertigstellungsdatum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="Fertigstellung:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/gesamtkosten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:text="Gesamtkosten:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/ersteller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Ersteller:"
+            android:textStyle="bold"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/organisation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Organisation:"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Status:"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/adresse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.18"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Adresse:"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/standard_layout">
+
+
+        <TextView
+            android:id="@+id/showId"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="0.2"
+            android:textSize="24dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/showName"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/showBeschreibung"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showErstellungdatum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showFertigstellungsdatum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showGesamtkosten"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showErsteller"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showOrganisation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showStatus"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.2"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/showAdresse"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.18"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
