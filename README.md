@@ -3,7 +3,7 @@
 The **Smart Building Solutions Mobile App** enables construction site workers and on-site personnel to track and update project progress in real time. It allows users to view project and contract data, update performance item statuses, and upload photo documentation directly from the construction site — even when offline.
 
 > **Note:** This repository contains only the **Android client application**.
-> [Backend and web components](https://github.com/atakan-kara99/SmartBuildingSolutions) are maintained in separate repositories.
+> [Backend and web components](https://github.com/atakan-kara99/SmartBuildingSolutions-Web) are maintained in separate repositories.
 
 ---
 
